@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A3E75221F8FF4050098D940 /* RequestServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E75211F8FF4050098D940 /* RequestServices.swift */; };
+		2A461B4A1F8FA91B006EAF8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A461B491F8FA91B006EAF8F /* AppDelegate.swift */; };
+		2A461B4C1F8FA91B006EAF8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A461B4B1F8FA91B006EAF8F /* ViewController.swift */; };
+		2A461B4F1F8FA91B006EAF8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A461B4D1F8FA91B006EAF8F /* Main.storyboard */; };
+		2A461B511F8FA91B006EAF8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A461B501F8FA91B006EAF8F /* Assets.xcassets */; };
+		2A461B541F8FA91B006EAF8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A461B521F8FA91B006EAF8F /* LaunchScreen.storyboard */; };
+		2A461B5D1F8FA9D2006EAF8F /* NFCHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A461B5C1F8FA9D2006EAF8F /* NFCHelper.swift */; };
+		2A47751C1F8FE33600AD4B3D /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47751B1F8FE33600AD4B3D /* Action.swift */; };
+		2A47751E1F8FE45600AD4B3D /* ActionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47751D1F8FE45600AD4B3D /* ActionBundle.swift */; };
+		2A4775221F8FE7AC00AD4B3D /* ActionBundleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4775211F8FE7AC00AD4B3D /* ActionBundleManager.swift */; };
+		45521AEF1F905949002F2955 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45521AEE1F905949002F2955 /* CustomCell.swift */; };
+		45521AF11F905DF4002F2955 /* DeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45521AF01F905DF4002F2955 /* DeviceController.swift */; };
+		4571094A1F90EBB600EE129B /* nfc_button_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 457109481F90EBB600EE129B /* nfc_button_gray.png */; };
+		4571094B1F90EBB600EE129B /* nfc_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 457109491F90EBB600EE129B /* nfc_button.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A3E75211F8FF4050098D940 /* RequestServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestServices.swift; sourceTree = "<group>"; };
+		2A461B461F8FA91B006EAF8F /* NFC-Smart-Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NFC-Smart-Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A461B491F8FA91B006EAF8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A461B4B1F8FA91B006EAF8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A461B4E1F8FA91B006EAF8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A461B501F8FA91B006EAF8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A461B531F8FA91B006EAF8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A461B551F8FA91B006EAF8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A461B5B1F8FA924006EAF8F /* NFC-Smart-Home.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NFC-Smart-Home.entitlements"; sourceTree = "<group>"; };
+		2A461B5C1F8FA9D2006EAF8F /* NFCHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCHelper.swift; sourceTree = "<group>"; };
+		2A47751B1F8FE33600AD4B3D /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		2A47751D1F8FE45600AD4B3D /* ActionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionBundle.swift; sourceTree = "<group>"; };
+		2A4775211F8FE7AC00AD4B3D /* ActionBundleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionBundleManager.swift; sourceTree = "<group>"; };
+		45521AEE1F905949002F2955 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		45521AF01F905DF4002F2955 /* DeviceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceController.swift; sourceTree = "<group>"; };
+		457109481F90EBB600EE129B /* nfc_button_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nfc_button_gray.png; path = "NFC-Smart-Home/Images/nfc_button_gray.png"; sourceTree = SOURCE_ROOT; };
+		457109491F90EBB600EE129B /* nfc_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nfc_button.png; path = "NFC-Smart-Home/Images/nfc_button.png"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A461B431F8FA91B006EAF8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A461B3D1F8FA91B006EAF8F = {
+			isa = PBXGroup;
+			children = (
+				2A461B481F8FA91B006EAF8F /* NFC-Smart-Home */,
+				2A461B471F8FA91B006EAF8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A461B471F8FA91B006EAF8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A461B461F8FA91B006EAF8F /* NFC-Smart-Home.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A461B481F8FA91B006EAF8F /* NFC-Smart-Home */ = {
+			isa = PBXGroup;
+			children = (
+				457109471F90EB9300EE129B /* Images */,
+				2A461B5B1F8FA924006EAF8F /* NFC-Smart-Home.entitlements */,
+				2A461B491F8FA91B006EAF8F /* AppDelegate.swift */,
+				2A461B4B1F8FA91B006EAF8F /* ViewController.swift */,
+				2A461B4D1F8FA91B006EAF8F /* Main.storyboard */,
+				2A461B501F8FA91B006EAF8F /* Assets.xcassets */,
+				2A461B521F8FA91B006EAF8F /* LaunchScreen.storyboard */,
+				2A461B551F8FA91B006EAF8F /* Info.plist */,
+				2A461B5C1F8FA9D2006EAF8F /* NFCHelper.swift */,
+				2A47751B1F8FE33600AD4B3D /* Action.swift */,
+				2A47751D1F8FE45600AD4B3D /* ActionBundle.swift */,
+				2A4775211F8FE7AC00AD4B3D /* ActionBundleManager.swift */,
+				2A3E75211F8FF4050098D940 /* RequestServices.swift */,
+				45521AEE1F905949002F2955 /* CustomCell.swift */,
+				45521AF01F905DF4002F2955 /* DeviceController.swift */,
+			);
+			path = "NFC-Smart-Home";
+			sourceTree = "<group>";
+		};
+		457109471F90EB9300EE129B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				457109481F90EBB600EE129B /* nfc_button_gray.png */,
+				457109491F90EBB600EE129B /* nfc_button.png */,
+			);
+			name = Images;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A461B451F8FA91B006EAF8F /* NFC-Smart-Home */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A461B581F8FA91B006EAF8F /* Build configuration list for PBXNativeTarget "NFC-Smart-Home" */;
+			buildPhases = (
+				2A461B421F8FA91B006EAF8F /* Sources */,
+				2A461B431F8FA91B006EAF8F /* Frameworks */,
+				2A461B441F8FA91B006EAF8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NFC-Smart-Home";
+			productName = "NFC-Smart-Home";
+			productReference = 2A461B461F8FA91B006EAF8F /* NFC-Smart-Home.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A461B3E1F8FA91B006EAF8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Garage;
+				TargetAttributes = {
+					2A461B451F8FA91B006EAF8F = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2A461B411F8FA91B006EAF8F /* Build configuration list for PBXProject "NFC-Smart-Home" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A461B3D1F8FA91B006EAF8F;
+			productRefGroup = 2A461B471F8FA91B006EAF8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A461B451F8FA91B006EAF8F /* NFC-Smart-Home */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A461B441F8FA91B006EAF8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A461B541F8FA91B006EAF8F /* LaunchScreen.storyboard in Resources */,
+				4571094B1F90EBB600EE129B /* nfc_button.png in Resources */,
+				2A461B511F8FA91B006EAF8F /* Assets.xcassets in Resources */,
+				4571094A1F90EBB600EE129B /* nfc_button_gray.png in Resources */,
+				2A461B4F1F8FA91B006EAF8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A461B421F8FA91B006EAF8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A461B4C1F8FA91B006EAF8F /* ViewController.swift in Sources */,
+				2A47751C1F8FE33600AD4B3D /* Action.swift in Sources */,
+				2A3E75221F8FF4050098D940 /* RequestServices.swift in Sources */,
+				2A461B5D1F8FA9D2006EAF8F /* NFCHelper.swift in Sources */,
+				45521AEF1F905949002F2955 /* CustomCell.swift in Sources */,
+				2A47751E1F8FE45600AD4B3D /* ActionBundle.swift in Sources */,
+				45521AF11F905DF4002F2955 /* DeviceController.swift in Sources */,
+				2A4775221F8FE7AC00AD4B3D /* ActionBundleManager.swift in Sources */,
+				2A461B4A1F8FA91B006EAF8F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A461B4D1F8FA91B006EAF8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A461B4E1F8FA91B006EAF8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A461B521F8FA91B006EAF8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A461B531F8FA91B006EAF8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A461B561F8FA91B006EAF8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A461B571F8FA91B006EAF8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A461B591F8FA91B006EAF8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NFC-Smart-Home/NFC-Smart-Home.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "NFC-Smart-Home/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.progressive.NFC-Smart-Home";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A461B5A1F8FA91B006EAF8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NFC-Smart-Home/NFC-Smart-Home.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "NFC-Smart-Home/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.progressive.NFC-Smart-Home";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A461B411F8FA91B006EAF8F /* Build configuration list for PBXProject "NFC-Smart-Home" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A461B561F8FA91B006EAF8F /* Debug */,
+				2A461B571F8FA91B006EAF8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A461B581F8FA91B006EAF8F /* Build configuration list for PBXNativeTarget "NFC-Smart-Home" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A461B591F8FA91B006EAF8F /* Debug */,
+				2A461B5A1F8FA91B006EAF8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A461B3E1F8FA91B006EAF8F /* Project object */;
+}

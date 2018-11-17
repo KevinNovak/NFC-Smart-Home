@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RoW-jr-Mkz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica-Oblique</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+        <array key="MarkerFeltThin.ttf">
+            <string>MarkerFelt-Thin</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Devices-->
+        <scene sceneID="GcT-tG-8zn">
+            <objects>
+                <viewController id="AV3-Gs-nvj" customClass="DeviceController" customModule="NFC_Smart_Home" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gq9-Bg-yMX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bOv-UV-R6T">
+                                <rect key="frame" x="0.0" y="108" width="375" height="451"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CustomCell" id="iFh-03-F9O" customClass="CustomCell" customModule="NFC_Smart_Home" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iFh-03-F9O" id="4um-eS-2GT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fH-2L-aQ0">
+                                                    <rect key="frame" x="28" y="-28.5" width="44.5" height="100.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="mrj-vl-5Ta"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zee-zh-QOn">
+                                                    <rect key="frame" x="288" y="6.5" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Zee-zh-QOn" secondAttribute="trailing" constant="30" id="CsY-yC-e6C"/>
+                                                <constraint firstItem="1fH-2L-aQ0" firstAttribute="centerY" secondItem="4um-eS-2GT" secondAttribute="centerY" id="bFL-aN-S88"/>
+                                                <constraint firstItem="1fH-2L-aQ0" firstAttribute="leading" secondItem="4um-eS-2GT" secondAttribute="leadingMargin" constant="20" id="by6-Ue-mSJ"/>
+                                                <constraint firstItem="Zee-zh-QOn" firstAttribute="centerY" secondItem="4um-eS-2GT" secondAttribute="centerY" id="sg9-Gx-17Y"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="name" destination="1fH-2L-aQ0" id="BnP-lU-zrP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUE-18-WD1">
+                                <rect key="frame" x="0.0" y="558" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.23801231079999999" green="0.27490468759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Eld-tW-6z1"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="VTO-r1-bp8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Add to NFC Tag">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZY-9s-2HM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="80"/>
+                                <color key="backgroundColor" red="0.23801231079999999" green="0.27490468759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bOv-UV-R6T" firstAttribute="top" secondItem="kZY-9s-2HM" secondAttribute="bottom" constant="8" symbolic="YES" id="6QD-pg-IiK"/>
+                            <constraint firstItem="kZY-9s-2HM" firstAttribute="centerX" secondItem="Gq9-Bg-yMX" secondAttribute="centerX" id="CUN-Cb-1ib"/>
+                            <constraint firstItem="bOv-UV-R6T" firstAttribute="top" secondItem="v51-R4-T5i" secondAttribute="top" constant="88" id="Cue-7u-gpK"/>
+                            <constraint firstItem="v51-R4-T5i" firstAttribute="trailing" secondItem="dUE-18-WD1" secondAttribute="trailing" constant="186" id="Dsa-3c-ULl"/>
+                            <constraint firstItem="kZY-9s-2HM" firstAttribute="trailing" secondItem="bOv-UV-R6T" secondAttribute="trailing" id="IvF-Bk-LIJ"/>
+                            <constraint firstItem="kZY-9s-2HM" firstAttribute="top" secondItem="v51-R4-T5i" secondAttribute="top" id="Lsb-en-lMa"/>
+                            <constraint firstItem="bOv-UV-R6T" firstAttribute="leading" secondItem="Gq9-Bg-yMX" secondAttribute="leading" id="PN6-QT-cZh"/>
+                            <constraint firstAttribute="trailing" secondItem="bOv-UV-R6T" secondAttribute="trailing" id="QKb-m0-EkY"/>
+                            <constraint firstItem="kZY-9s-2HM" firstAttribute="leading" secondItem="bOv-UV-R6T" secondAttribute="leading" id="hxp-TY-RWl"/>
+                            <constraint firstItem="dUE-18-WD1" firstAttribute="leading" secondItem="v51-R4-T5i" secondAttribute="leading" id="jmv-cn-xab"/>
+                            <constraint firstItem="dUE-18-WD1" firstAttribute="leading" secondItem="bOv-UV-R6T" secondAttribute="leading" id="n2m-gm-1Xo"/>
+                            <constraint firstItem="dUE-18-WD1" firstAttribute="bottom" secondItem="v51-R4-T5i" secondAttribute="bottom" id="swe-S6-Kbg"/>
+                            <constraint firstItem="dUE-18-WD1" firstAttribute="top" secondItem="bOv-UV-R6T" secondAttribute="bottom" constant="-1" id="ur2-kh-cUk"/>
+                            <constraint firstItem="dUE-18-WD1" firstAttribute="trailing" secondItem="v51-R4-T5i" secondAttribute="trailing" id="z4n-Ps-ApU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v51-R4-T5i"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Devices" image="home_icon.png" id="PtP-lE-Qd0"/>
+                    <connections>
+                        <outlet property="deviceView" destination="bOv-UV-R6T" id="6dL-Cz-Kot"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Px8-6K-cr4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="509.60000000000002" y="177.66116941529236"/>
+        </scene>
+        <!--Scan-->
+        <scene sceneID="yKN-i7-FjQ">
+            <objects>
+                <viewController id="thd-ho-PjA" customClass="ViewController" customModule="NFC_Smart_Home" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pro-Kb-yuw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click to Begin Scan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72l-kL-iCS">
+                                <rect key="frame" x="54" y="492.5" width="266" height="39"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action Completed!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1o-IK-tHt" userLabel="Action Completed">
+                                <rect key="frame" x="37.5" y="147.5" width="300" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="RJk-B3-TCA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Oblique" family="Helvetica" pointSize="23"/>
+                                <color key="textColor" red="0.069489251929999996" green="0.84016758420000004" blue="0.150979379" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nfc_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="UXX-20-OBZ">
+                                <rect key="frame" x="58.5" y="204.5" width="258" height="258"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="258" id="co4-N2-mDX"/>
+                                    <constraint firstAttribute="width" constant="258" id="so2-fv-Zyh"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="KYx-Ot-Iuo" appends="YES" id="YRU-Nf-etu"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UXX-20-OBZ" firstAttribute="centerX" secondItem="pro-Kb-yuw" secondAttribute="centerX" id="Ae3-0x-V2q"/>
+                            <constraint firstItem="s1o-IK-tHt" firstAttribute="centerX" secondItem="pro-Kb-yuw" secondAttribute="centerX" id="N41-bH-zR5"/>
+                            <constraint firstItem="UXX-20-OBZ" firstAttribute="centerY" secondItem="pro-Kb-yuw" secondAttribute="centerY" id="QLl-9h-Ddb"/>
+                            <constraint firstItem="UXX-20-OBZ" firstAttribute="top" secondItem="s1o-IK-tHt" secondAttribute="bottom" constant="30" id="aJ7-fk-QWj"/>
+                            <constraint firstItem="72l-kL-iCS" firstAttribute="centerX" secondItem="pro-Kb-yuw" secondAttribute="centerX" id="cef-c3-5Yv"/>
+                            <constraint firstItem="72l-kL-iCS" firstAttribute="top" secondItem="UXX-20-OBZ" secondAttribute="bottom" constant="30" id="tEU-Kv-AK6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cec-V1-oWE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scan" image="nfc_icon.png" id="b2C-VM-eq9"/>
+                    <connections>
+                        <outlet property="actionCompletedLabel" destination="s1o-IK-tHt" id="ck3-Xb-l7g"/>
+                        <outlet property="scanButton" destination="UXX-20-OBZ" id="k5e-zJ-OqE"/>
+                        <outlet property="scanButtonTitle" destination="72l-kL-iCS" id="XDI-hI-Qwc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xBD-jS-Dk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="KYx-Ot-Iuo">
+                    <connections>
+                        <action selector="startImageClicked:" destination="thd-ho-PjA" id="WFK-fC-7eZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="508" y="-486"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="twx-fl-L4F">
+            <objects>
+                <tabBarController id="RoW-jr-Mkz" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YfP-Ez-ZYg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="thd-ho-PjA" kind="relationship" relationship="viewControllers" id="mxz-XG-vxW"/>
+                        <segue destination="AV3-Gs-nvj" kind="relationship" relationship="viewControllers" id="g24-So-mb1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aEs-VC-cs8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-444" y="-155"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home_icon.png" width="28" height="28"/>
+        <image name="nfc_button.png" width="852" height="848"/>
+        <image name="nfc_icon.png" width="28" height="28"/>
+    </resources>
+</document>

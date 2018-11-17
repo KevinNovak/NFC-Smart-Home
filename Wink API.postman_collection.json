@@ -1,0 +1,34 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Wink API",
+		"_postman_id": "ef9971f4-d273-60b1-2121-22bca36f6051",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Call",
+			"description": "",
+			"item": [
+				{
+					"name": "https://api.wink.com/users/me/wink_devices",
+					"request": {
+						"url": "https://api.wink.com/users/me/wink_devices",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer fQaRyKFD_XQHGDPsgOnGPjzGd6Le5aJK",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
